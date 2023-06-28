@@ -1,11 +1,12 @@
 /* header */
 
-.header{
+.container{
     display: flex;
     justify-content:space-between;
-    width: 1263px;
+    max-width:  1300px;
+    width: 100%;
     margin: 0 auto;
-    padding: 33px;
+    padding: 33px
 }
 
 .logo{
@@ -17,59 +18,70 @@ ul{
     display: flex;
     justify-content: space-between;
 }
-li{
+
+a{
     color: #636060;
     font-size: 17px;
     font-family: Helvetica;
     margin-right: 50px;
 }
 
+.fa-bars{
+    display: none;
+}
+
 /* section-1 */
 
 .s-1{
-    background-image: url(../imgs/photo1.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 1440px;
     height: 606px;
-    margin: 0 auto;
+    background-image: url("../imgs/photo1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 84px;
 }
 
 h1{
-    color: #FFF;
+    color: #fff;
     font-size: 79px;
     font-family: Helvetica;
     font-weight: 700;
-    margin: 0 auto;
-    padding-bottom: 31px;
+    text-align: center;
+    margin-bottom: 31px;
 }
 
 h2{
-    color: #FFF;
+    color: #fff;
     font-size: 19px;
     font-family: Helvetica;
-    margin-left: 140px;
+    text-align: center;
 }
 
-.p1{
+/* .p1{
     height: 130px;
-}
+} */
+
 /* section-2 */
 
-article{
+.s-2{
     width: 1263px;
     margin: 0 auto;
     margin-top: 84px;
     display: flex;
 }
 
-.div1{
-    width: 430px;
-    margin-right: 104px;
-    margin-left: 20px;
+.newsbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.infobox{
+    width: 300px;
+    margin-right: 50px;
 }
 
 
@@ -93,16 +105,21 @@ h4{
     font-family: Helvetica;
 }
 
-.card-1{
-    width: 286px;
-    margin-bottom: 56px;
+
+
+.cardsbox{
+    max-width: 924px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
 }
 
-.div2{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
+.card-1{
+    width: 240px;
+    margin-right: 50px;
+    margin-bottom: 56px;
 }
 
 h5{
